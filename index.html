@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartão de Visita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cartao">
+    <img src="imagens/imagem.png" alt="Imagem Principal" class="imagem-principal">
+    
+    <div class="logo-clinica">
+      <img src="imagens/clinica.2.png" alt="Logo da Clínica" class="logo">
+      
+    </div>
+    
+    <div class="botoes">
+      <button data-link="https://www.clinicadramariahelena.com.br/">Sobre Nós</button>
+      <button data-link="https://www.resultados.com.br/le/listaexames.aspx?origem=cell">Agende seu Exame</button>
+      <button data-link="https://www.resultados.com.br/clientes/cell/cellM.aspx">Resultados de Exames</button>
+      <button data-link="https://api.whatsapp.com/send?phone=558599857633&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20da%20Cl%C3%ADnica%20Dra.%20Maria%20Helena">Whatsapp</button>
+      <button data-link="https://www.clinicadramariahelena.com.br/trabconosco.html">Trabalhe Conosco</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const botoes = document.querySelectorAll('.botoes button');
+      botoes.forEach(botao => {
+        botao.addEventListener('click', function() {
+          const link = this.getAttribute('data-link');
+          abrirLink(link);
+        });
+      });
+
+      function abrirLink(link) {
+        window.open(link, '_blank'); // Abre o link em uma nova aba
+      }
+    });
+  </script>
+  </div>
+</body>
+</html>
