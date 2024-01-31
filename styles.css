@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  max-width: 400px; /* Defina um valor máximo para o cartão */
-  padding: 20px; /* Aumentei o padding para melhorar o espaçamento interno */
+  max-width: 400px; 
+  padding: 20px; 
   border: 1px solid #ccc;
   text-align: center;
   background-color: #ffffff;
@@ -24,15 +24,15 @@ body {
 
 .imagem-principal {
   width: 100%;
-  max-height: 200px; /* Ajuste a altura da imagem conforme necessário */
+  max-height: 200px;
   object-fit: cover; 
   border-radius: 5px;
-  margin-bottom: 20px; /* Aumentei o espaçamento inferior */
+  margin-bottom: 20px; 
 }
 
 .logo {
   width: 100%;
-  max-width: 500px; /* Ajuste na largura do logotipo */
+  max-width: 500px; 
   height: auto;
   margin: -1px auto;
 }
@@ -46,8 +46,8 @@ body {
 button {
   display: block;
   width:108%;
-  margin: 10px ; /* Aumentei o espaçamento entre os botões */
-  padding: 12px; /* Aumentei o padding dos botões */
+  margin: 10px ; 
+  padding: 12px; 
   font-size: 14px;
   background-color: #0a509b;
   color: white;
@@ -69,16 +69,10 @@ button:hover {
     justify-content: center;
     flex: 1 1 150px;
     height: 2000px;
-   
-    
-    
-   width: 200%; /* Ajuste a largura do cartão para telas maiores */
-     max-width: 850px; /* Defina um valor máximo maior para telas maiores */
-    /* margin: 20px auto;
-    height: auto; */
-
+    width: 200%;
+    max-width: 850px; 
   }
   .imagem-principal {
-    max-height: 300px; /* Ajuste a altura da imagem para telas maiores */
+    max-height: 300px; 
   }
 }
